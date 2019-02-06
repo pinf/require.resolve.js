@@ -1,0 +1,15 @@
+{
+    "name": "require.resolve",
+    "main": "require.resolve.js",
+    "version": "0.0.1",
+    "devDependencies": {
+        "mocha": "^5.2.0"
+    },
+    "dependencies": {
+        "resolve": "^1.10.0"
+    },
+    "scripts": {
+        "test": "mocha *.test.js",
+        "tdd": "nodemon --exec npm test"
+    }
+}
