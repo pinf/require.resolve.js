@@ -1,7 +1,7 @@
 {
     "name": "require.resolve",
-    "main": "require.resolve.js",
     "version": "0.0.1",
+    "main": "require.resolve.js",
     "devDependencies": {
         "mocha": "^5.2.0"
     },
