@@ -1,5 +1,5 @@
 {
-  "name": "require.resolve",
+  "name": "@cadorn/require.resolve",
   "version": "0.0.1-pre.0",
   "main": "require.resolve.js",
   "devDependencies": {
