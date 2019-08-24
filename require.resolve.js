@@ -1,7 +1,19 @@
 
 module.exports = function (module) {
 
+    const PATH = require("path");
     const RESOLVE = require('resolve');
+
+    if (typeof module === 'string') {
+        const pathParts = module.split('/');
+        module = {
+            id: `${module}/filename`,
+            paths: []
+        };
+        for (let i=pathParts.length; i > 0; i--) {
+            module.paths.push(PATH.join('/', pathParts.slice(0, i).join('/'), 'node_modules'));
+        }
+    }
 
     const basedir = module.id.replace(/\/[^\/]+$/, '');
     const dirs = module.paths.map(function (path) {

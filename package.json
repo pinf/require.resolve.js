@@ -1,6 +1,6 @@
 {
   "name": "@cadorn/require.resolve",
-  "version": "0.0.1-pre.1",
+  "version": "0.0.1-pre.2",
   "main": "require.resolve.js",
   "devDependencies": {
     "mocha": "^5.2.0"
